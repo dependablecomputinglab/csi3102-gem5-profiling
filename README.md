@@ -55,14 +55,14 @@ $ ./build/ARM/gem5.opt -re config/example/se.py --cpu-type=atomic -c goodbye_arm
 ```
 
 ##STEP3: Analyzing Simulation Statistics
-####Find difference between two files with 'diff'
+####Find difference between two files with _diff_
 $ diff [_options_] <_file1_> <_file2_>
 
 ```sh
 $ diff goodbye1.txt goodbye2.txt
 ```
 
-You can use redirection.
+You can use several options and redirection.
 ```sh
 $ diff -u goodbye1.txt goodbye2.txt > goodbye.diff
 ```
