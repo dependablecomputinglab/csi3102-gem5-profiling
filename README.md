@@ -6,6 +6,11 @@ We don't show working directory, so you have to find it yourself. (We believe yo
 ####What is benchmark? What does simulator do?
 ![benchmark&simulator-concept](http://dclab.yonsei.ac.kr/csi3102/benchmark&simulator-concept.png)
 
+####Compile _vs._ Build _vs._ Install
+- **Compile**: Source code -> Object file. (ex) hello.c -> hello.o
+- **Build**: Given source codes and libraries -> (one or more) binary file
+- **Install**: Place binary file to install path.
+
 ##Reference
 - [gem5 CPU Models - SimpleCPU](http://www.m5sim.org/SimpleCPU)
 - [Running gem5](http://www.gem5.org/Running_gem5)
