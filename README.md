@@ -49,7 +49,7 @@ arm-linux-gnueabi-gcc -static qsort_large.c -O3 -o qsort_large -lm
 ...
 ```
 
-Then, execute '$ _make_' to build.
+To build, execute
 ```sh
 $ make
 ```
