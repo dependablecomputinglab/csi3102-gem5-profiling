@@ -20,10 +20,10 @@ $ sudo apt-get install vim
 ```
 
 ##Overview
-#####What is benchmark? What does simulator do?
+####What is benchmark? What does simulator do?
 ![benchmark&simulator-concept](http://dclab.yonsei.ac.kr/csi3102/benchmark&simulator-concept.png)
 
-###Profiling with gem5 and mibench
+####Profiling with gem5 and mibench
 ![profiling-with-gem5-and-mibench](http://dclab.yonsei.ac.kr/csi3102/profiling-with-gem5-and-mibench-ver2.png)
 
 ####Simulation Process
