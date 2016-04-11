@@ -17,7 +17,7 @@ We don't show working directory, so you have to find it yourself. (We believe yo
 
 ##Overview
 ####Profiling with gem5 and mibench
-![profiling-with-gem5-and-mibench](http://dclab.yonsei.ac.kr/csi3102/profiling-with-gem5&mibench.png)
+![profiling-with-gem5-and-mibench](http://dclab.yonsei.ac.kr/csi3102/profiling-with-gem5-and-mibench.png)
 
 ####Simulation Process
 1. Get benchmark to simulate
