@@ -7,16 +7,23 @@
 ####Notation
 We denote all shell command start with '$'. We denote essential argument in '<...>', optional argument in '[...]'. <br />
 We don't show working directory, so you have to find it yourself. (We believe your maturity!)
-####What is benchmark? What does simulator do?
-![benchmark&simulator-concept](http://dclab.yonsei.ac.kr/csi3102/benchmark&simulator-concept.png)
 
 ####Compile _vs._ Build _vs._ Install
 - **Compile**: Source code -> Object file. (ex) hello.c -> hello.o
 - **Build**: Given source codes and libraries -> (one or more) Binary file
 - **Install**: Place binary file to install path.
 
+####(Optional) We recommend install...
+We recommend you to install _vim_. It is improved version of _vi_. If you are using Ubuntu, just execute:
+```sh
+$ sudo apt-get install vim
+```
+
 ##Overview
-####Profiling with gem5 and mibench
+#####What is benchmark? What does simulator do?
+![benchmark&simulator-concept](http://dclab.yonsei.ac.kr/csi3102/benchmark&simulator-concept.png)
+
+###Profiling with gem5 and mibench
 ![profiling-with-gem5-and-mibench](http://dclab.yonsei.ac.kr/csi3102/profiling-with-gem5-and-mibench-ver2.png)
 
 ####Simulation Process
