@@ -1,7 +1,7 @@
 #Profiling with gem5 and mibench
 ##Before Start
 We denote all shell command start with '$'. We denote essential argument in '<...>', optional argument in '[...]'. <br />
-We don't show working directory, so you have to find it yourself.
+We don't show working directory, so you have to find it yourself. (We believe your maturity!)
 
 ##Overview
 ####Profiling with gem5 and mibench
