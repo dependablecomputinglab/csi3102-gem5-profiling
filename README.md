@@ -8,7 +8,7 @@
 2. Do simulation
 3. Analyze simulation statistics
 
-##Get Benchmark
+##STEP1: Get Benchmark
 You can get benchmark by:
 - Making your own benchmark yourself
 - Download binary
@@ -21,7 +21,7 @@ In our case, we will download _MiBench_, then cross-compile to get benchmark.
 $ git clone https://github.com/embecosm/mibench.git
 ```
 
-####Install ARM Cross-compiler
+####Install Cross-compiler
 ```sh
 $ sudo apt-get install gcc-arm-linux-gnueabi
 ```
@@ -34,11 +34,11 @@ $ <_your cross-compiler_> -static [_other options_] <_target_>
 ```sh
 $ arm-linux-gnueabi-gcc -static -o hellocsi3102 hellocsi3102.c 
 ```
-##Perform Simulation
+##STEP2: Perform Simulation
 $ <_gem5 binary_> [_gem5 options_] <_gem5 script_> [_gem5 script options_]
 
 
-##Analyzing Simulation Statistics
+##STEP3: Analyzing Simulation Statistics
 ####Find difference between two files with 'diff'
 $ diff [_options_] <_file1_> <_file2_>
 
