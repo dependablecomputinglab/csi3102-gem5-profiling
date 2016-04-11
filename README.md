@@ -42,10 +42,10 @@ gcc -static qsort_large.c -O3 -o qsort_large -lm
 ...
 ```
 
-Modify the _Makefile_ like to:
+Replace all '_gcc_' to '_arm-linux-gnueabi-gcc_', so the _Makefile_ looks like:
 ```make
 ...
-arm-linux-gnueabi-gcc -static qsort_large.c -O3 -o qsort_large_arm -lm 
+arm-linux-gnueabi-gcc -static qsort_large.c -O3 -o qsort_large -lm 
 ...
 ```
 
@@ -56,14 +56,14 @@ $ make
 
 ##STEP2: Perform Simulation
 $ <_gem5 binary_> [_gem5 options_] <_gem5 script_> [_gem5 script options_] <br />
-Example 1
-```sh
-$ ./build/ARM/gem5.opt configs/example/se.py -c hellocsi3102_arm
-```
 
-Example 2
+####Useful _gem5_ script options
+- '-c <_binary to simulate_>'
+- '-o <_input set of benchmark_>'
+
+For example, if you want to simulate *qsort_large*, 
 ```sh
-$ ./build/ARM/gem5.opt -re configs/example/se.py --cpu-type=atomic -c goodbye_arm -o "Kyoungwoo Jongho CSI3102"
+$ ./build/ARM/gem5.opt -re configs/example/se.py --cpu-type=atomic -c qsort_large -o "input_large.dat"
 ```
 
 ##STEP3: Analyzing Simulation Statistics
