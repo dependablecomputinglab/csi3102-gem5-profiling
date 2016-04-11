@@ -68,13 +68,23 @@ $ ./build/ARM/gem5.opt -re configs/example/se.py --cpu-type=atomic -c qsort_larg
 
 ##STEP3: Analyzing Simulation Statistics
 ####Find difference between two files with _diff_
+The '_diff_' is a program in linux. <br />
+You can use '_diff_' by executing: <br />
 $ diff [_options_] <_file1_> <_file2_>
 
+For example, clone this repository and execute:
 ```sh
 $ diff goodbye1.txt goodbye2.txt
 ```
 
-You can use several options and redirection.
+If you use '__-u__' option like this:
+```sh
+$ diff -u goodbye1.txt goodbye2.txt
+```
+
+Redirection may make you happy! Try this:
 ```sh
 $ diff -u goodbye1.txt goodbye2.txt > goodbye.diff
 ```
+
+You can see the file _goodbye.diff_.
