@@ -1,4 +1,8 @@
 #Profiling with gem5 and mibench
+##Reference
+- [gem5 CPU Models - SimpleCPU](http://www.m5sim.org/SimpleCPU)
+- [Running gem5](http://www.gem5.org/Running_gem5)
+
 ##Before Start
 ####Notation
 We denote all shell command start with '$'. We denote essential argument in '<...>', optional argument in '[...]'. <br />
@@ -10,10 +14,6 @@ We don't show working directory, so you have to find it yourself. (We believe yo
 - **Compile**: Source code -> Object file. (ex) hello.c -> hello.o
 - **Build**: Given source codes and libraries -> (one or more) binary file
 - **Install**: Place binary file to install path.
-
-##Reference
-- [gem5 CPU Models - SimpleCPU](http://www.m5sim.org/SimpleCPU)
-- [Running gem5](http://www.gem5.org/Running_gem5)
 
 ##Overview
 ####Profiling with gem5 and mibench
