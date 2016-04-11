@@ -12,7 +12,7 @@ We don't show working directory, so you have to find it yourself. (We believe yo
 
 ####Compile _vs._ Build _vs._ Install
 - **Compile**: Source code -> Object file. (ex) hello.c -> hello.o
-- **Build**: Given source codes and libraries -> (one or more) binary file
+- **Build**: Given source codes and libraries -> (one or more) Binary file
 - **Install**: Place binary file to install path.
 
 ##Overview
@@ -77,7 +77,7 @@ $ ./build/ARM/gem5.opt -re configs/example/se.py --cpu-type=atomic -c qsort_larg
 ##STEP3: Analyzing Simulation Statistics
 ####Find difference between two files with _diff_
 The _diff_ is a program in linux. <br />
-_diff_ compares two files, **line by line**. <br />
+The _diff_ compares two files, **line by line**. <br />
 You can use _diff_ by executing: **$ diff [_options_] <_file1_> <_file2_>** <br />
 
 For example, clone this repository and execute:
