@@ -42,16 +42,25 @@ $ <_your cross-compiler_> -static [_other options_] <_target_>
 ```sh
 $ arm-linux-gnueabi-gcc -static -O3 -o hellocsi3102_arm hellocsi3102.c 
 ```
+
+```sh
+$ make
+```
+
+
+
+
+
 ##STEP2: Perform Simulation
 $ <_gem5 binary_> [_gem5 options_] <_gem5 script_> [_gem5 script options_] <br />
 Example 1
 ```sh
-$ ./build/ARM/gem5.opt config/example/se.py -c hellocsi3102_arm
+$ ./build/ARM/gem5.opt configs/example/se.py -c hellocsi3102_arm
 ```
 
 Example 2
 ```sh
-$ ./build/ARM/gem5.opt -re config/example/se.py --cpu-type=atomic -c goodbye_arm -o "Kyoungwoo Jongho CSI3102"
+$ ./build/ARM/gem5.opt -re configs/example/se.py --cpu-type=atomic -c goodbye_arm -o "Kyoungwoo Jongho CSI3102"
 ```
 
 ##STEP3: Analyzing Simulation Statistics
