@@ -35,35 +35,24 @@ $ sudo apt-get install gcc-arm-linux-gnueabi
 ```
 
 ####Cross-compile to build binary
-**CAUTION** You must use option '-static', or simulation in gem5 ends with run-time linking error. <br />
-
-$ <_your cross-compiler_> -static [_other options_] <_target_>
-
-```sh
-$ arm-linux-gnueabi-gcc -static -O3 -o hellocsi3102_arm hellocsi3102.c 
-```
-
-Initially, _Makefile_ looks like:
+Initially, you can see _Makefile_ in directory '_mibench/automotive/qsort_' looks like:
 ```make
 ...
 gcc -static qsort_large.c -O3 -o qsort_large -lm 
 ...
 ```
 
-Modify the _Makefile_ like:
+Modify the _Makefile_ like to:
 ```make
 ...
 arm-linux-gnueabi-gcc -static qsort_large.c -O3 -o qsort_large_arm -lm 
 ...
 ```
 
+Then, execute '$ _make_' to build.
 ```sh
 $ make
 ```
-
-
-
-
 
 ##STEP2: Perform Simulation
 $ <_gem5 binary_> [_gem5 options_] <_gem5 script_> [_gem5 script options_] <br />
