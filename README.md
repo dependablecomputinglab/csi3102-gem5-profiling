@@ -1,7 +1,10 @@
 #Profiling with gem5 and mibench
 ##Before Start
+####Notation
 We denote all shell command start with '$'. We denote essential argument in '<...>', optional argument in '[...]'. <br />
 We don't show working directory, so you have to find it yourself. (We believe your maturity!)
+####What is benchmark? What does simulator do?
+![benchmark&simulator-concept](http://dclab.yonsei.ac.kr/csi3102/benchmark&simulator-concept.png)
 
 ##Reference
 - [gem5 CPU Models - SimpleCPU](http://www.m5sim.org/SimpleCPU)
