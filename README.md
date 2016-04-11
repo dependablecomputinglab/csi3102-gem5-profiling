@@ -3,6 +3,10 @@
 We denote all shell command start with '$'. We denote essential argument in '<...>', optional argument in '[...]'. <br />
 We don't show working directory, so you have to find it yourself. (We believe your maturity!)
 
+##Reference
+- [gem5 CPU Models - SimpleCPU](http://www.m5sim.org/SimpleCPU)
+- [Running gem5](http://www.gem5.org/Running_gem5)
+
 ##Overview
 ####Profiling with gem5 and mibench
 ![profiling-with-gem5-and-mibench](http://dclab.yonsei.ac.kr/csi3102/profiling_with_gem5_and_mibench.png)
@@ -39,15 +43,16 @@ $ <_your cross-compiler_> -static [_other options_] <_target_>
 $ arm-linux-gnueabi-gcc -static -O3 -o hellocsi3102_arm hellocsi3102.c 
 ```
 ##STEP2: Perform Simulation
-$ <_gem5 binary_> [_gem5 options_] <_gem5 script_> [_gem5 script options_]
+$ <_gem5 binary_> [_gem5 options_] <_gem5 script_> [_gem5 script options_] <br />
+Example 1
 ```sh
 $ ./build/ARM/gem5.opt config/example/se.py -c hellocsi3102_arm
 ```
 
+Example 2
 ```sh
-$ ./build/ARM/gem5.opt -re config/example/se.py -c goodbye_arm -o "Kyoungwoo Jongho CSI3102"
+$ ./build/ARM/gem5.opt -re config/example/se.py --cpu-type=atomic -c goodbye_arm -o "Kyoungwoo Jongho CSI3102"
 ```
-
 
 ##STEP3: Analyzing Simulation Statistics
 ####Find difference between two files with 'diff'
