@@ -1,4 +1,8 @@
 #Profiling with gem5 and mibench
+##Before Start
+We denote all shell command start with '$'. <br />
+We don't show working directory, so you have to find it yourself.
+
 ##Overview
 ####Profiling with gem5 and mibench
 ![profiling-with-gem5-and-mibench](http://dclab.yonsei.ac.kr/csi3102/profiling_with_gem5_and_mibench.png)
@@ -32,10 +36,17 @@ $ sudo apt-get install gcc-arm-linux-gnueabi
 $ <_your cross-compiler_> -static [_other options_] <_target_>
 
 ```sh
-$ arm-linux-gnueabi-gcc -static -o hellocsi3102 hellocsi3102.c 
+$ arm-linux-gnueabi-gcc -static -O3 -o hellocsi3102_arm hellocsi3102.c 
 ```
 ##STEP2: Perform Simulation
 $ <_gem5 binary_> [_gem5 options_] <_gem5 script_> [_gem5 script options_]
+```sh
+$ ./build/ARM/gem5.opt config/example/se.py -c hellocsi3102_arm
+```
+
+```sh
+$ ./build/ARM/gem5.opt -re config/example/se.py -c goodbye_arm -o "Kyoungwoo Jongho CSI3102"
+```
 
 
 ##STEP3: Analyzing Simulation Statistics
