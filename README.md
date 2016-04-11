@@ -43,13 +43,18 @@ $ <_your cross-compiler_> -static [_other options_] <_target_>
 $ arm-linux-gnueabi-gcc -static -O3 -o hellocsi3102_arm hellocsi3102.c 
 ```
 
-From
+Initially, _Makefile_ looks like:
 ```make
+...
 gcc -static qsort_large.c -O3 -o qsort_large -lm 
+...
 ```
 
+Modify the _Makefile_ like:
 ```make
+...
 arm-linux-gnueabi-gcc -static qsort_large.c -O3 -o qsort_large_arm -lm 
+...
 ```
 
 ```sh
