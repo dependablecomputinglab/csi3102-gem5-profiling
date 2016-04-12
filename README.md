@@ -57,7 +57,7 @@ gcc -static qsort_large.c -O3 -o qsort_large -lm
 ...
 ```
 
-Replace all '_gcc_' to '_arm-linux-gnueabi-gcc_', so the _Makefile_ looks like:
+Replace __all__ '_gcc_' to '_arm-linux-gnueabi-gcc_', so the _Makefile_ looks like:
 ```make
 ...
 arm-linux-gnueabi-gcc -static qsort_large.c -O3 -o qsort_large -lm 
@@ -69,8 +69,19 @@ To build, execute
 $ make
 ```
 
-__NOTE__ When you cross-compile, you must use '__-static__' option. If there is no '__-static__' option in _Makefile_, you have to insert it.
+__NOTE__ When you cross-compile, you must use '__-static__' option. If there is no '__-static__' option in _Makefile_, you have to insert it. <br />
+For example, if your _Makefile_ looks like:
+```make
+...
+arm-linux-gnueabi-gcc qsort_large.c -O3 -o qsort_large -lm
+...
+```
 
+You have to modify _Makefile_ to look like:
+```make
+...
+arm-linux-gnueabi-gcc -static qsort_large.c -O3 -o qsort_large -lm 
+```
 
 ##STEP2: Perform Simulation
 $ <_gem5 binary_> [_gem5 options_] <_gem5 script_> [_gem5 script options_] <br />
