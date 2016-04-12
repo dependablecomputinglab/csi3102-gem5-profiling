@@ -93,7 +93,7 @@ $ <_gem5 binary_> [_gem5 options_] <_gem5 script_> [_gem5 script options_] <br /
 
 For example, if you want to simulate *qsort_large*, 
 ```sh
-$ ./build/ARM/gem5.opt -re configs/example/se.py --cpu-type=atomic -c qsort_large -o "<path to input_large.dat>"
+$ ./build/ARM/gem5.opt -re configs/example/se.py --cpu-type=atomic -c <path to qsort_large> -o "<path to input_large.dat>"
 ```
 
 ##STEP3: Analyzing Simulation Statistics
