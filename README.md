@@ -77,10 +77,11 @@ arm-linux-gnueabi-gcc qsort_large.c -O3 -o qsort_large -lm
 ...
 ```
 
-You have to modify _Makefile_ to look like:
+You have to insert '__-static__' option. Then, _Makefile_ will look like:
 ```make
 ...
 arm-linux-gnueabi-gcc -static qsort_large.c -O3 -o qsort_large -lm 
+...
 ```
 
 ##STEP2: Perform Simulation
