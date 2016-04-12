@@ -93,7 +93,14 @@ $ <_gem5 binary_> [_gem5 options_] <_gem5 script_> [_gem5 script options_] <br /
 
 For example, if you want to simulate *qsort_large*, 
 ```sh
-$ ./build/ARM/gem5.opt -re configs/example/se.py --cpu-type=atomic -c <path to qsort_large> -o "<path to input_large.dat>"
+$ ./build/ARM/gem5.opt -re configs/example/se.py --cpu-type=atomic -c <path to qsort_large> -o <path to input_large.dat>
+```
+
+**NOTE** <br />
+If you want to put multiple input to binary, you have to use quotation marks(") and white spaces. <br />
+For example, 
+```sh
+$ ./build/ARM/gem5.opt -re configs/example/se.py --cpu-type=timing -c fft -o "100 64"
 ```
 
 ##STEP3: Analyzing Simulation Statistics
