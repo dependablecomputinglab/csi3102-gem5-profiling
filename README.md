@@ -69,6 +69,9 @@ To build, execute
 $ make
 ```
 
+__NOTE__ When you cross-compile, you must use '__-static__' option. If there is no '__-static__' option in _Makefile_, you have to insert it.
+
+
 ##STEP2: Perform Simulation
 $ <_gem5 binary_> [_gem5 options_] <_gem5 script_> [_gem5 script options_] <br />
 
