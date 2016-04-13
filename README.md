@@ -98,9 +98,9 @@ $ ./build/ARM/gem5.opt -re configs/example/se.py --cpu-type=atomic -c <path to q
 
 **NOTE** <br />
 If you want to put multiple input to binary, you have to use quotation marks(") and white spaces. <br />
-For example, 
+For example, if your _fft_ binary is in _~/mibench/telecom/FFT_, 
 ```sh
-$ ./build/ARM/gem5.opt -re configs/example/se.py --cpu-type=timing -c ~/mibench/fft -o "100 64"
+$ ./build/ARM/gem5.opt -re configs/example/se.py --cpu-type=timing -c ~/mibench/telecom/FFT/fft -o "100 64"
 ```
 
 ##STEP3: Analyzing Simulation Statistics
