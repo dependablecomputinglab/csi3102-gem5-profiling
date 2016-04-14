@@ -2,6 +2,7 @@
 ##Reference
 - [gem5 CPU Models - SimpleCPU](http://www.m5sim.org/SimpleCPU)
 - [Running gem5](http://www.gem5.org/Running_gem5)
+- [MiBench: A free, commercially representative embedded benchmark suite](http://dl.acm.org/citation.cfm?id=1128563)
 
 ##Before Start
 ####Notation
