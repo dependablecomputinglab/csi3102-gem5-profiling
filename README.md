@@ -1,6 +1,7 @@
 #Profiling with _gem5_
 ##Read
 - [Before Project: *gem5* Tutorial](https://github.com/dependablecomputinglab/csi3102-tutorial)
+
 ##Reference
 - [gem5 CPU Models - SimpleCPU](http://www.m5sim.org/SimpleCPU)
 - [Running gem5](http://www.gem5.org/Running_gem5)
