@@ -3,4 +3,4 @@ hello
 NICE TO MEET YOU
 GOOD BYE
 good bye!
-Fuck you, CSI3102 !
+Farewell, CSI3102 !
